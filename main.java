@@ -12,19 +12,19 @@ public class main {
 
             Scanner sc = new Scanner(System.in);
 
-            HashMap <String, String> hellos = new HashMap<String, String>();
+            HashMap <String, Integer> hellos = new HashMap<String, String>();
 
             String action, id, text, key;
 
             action = "";
 
-            hellos.put("Gryffindor", "0");
+            hellos.put("Gryffindor", 0);
 
-            hellos.put("Hufflepuff", "0");
+            hellos.put("Hufflepuff", 0);
 
-            hellos.put("Ravenclaw", "0");
+            hellos.put("Ravenclaw", 0);
 
-            hellos.put("Slitheryn", "0");
+            hellos.put("Slitheryn", 0);
 
             Iterator<String> iterator;
 
@@ -38,7 +38,7 @@ public class main {
 
                     System.out.println("Saisir l'identifiant :");
 
-                    id = sc.next();
+                    id = sc.nextInt();
 
                     if (action.equals("+")) {
 
