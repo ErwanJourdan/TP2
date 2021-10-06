@@ -18,13 +18,13 @@ public class main {
 
             action = "";
 
-            hellos.put("Maison1", "0");
+            hellos.put("Gryffondor", "0");
 
-            hellos.put("Maison2", "0");
+            hellos.put("Poufsouffle", "0");
 
-            hellos.put("Maison3", "0");
+            hellos.put("Serdaigle", "0");
 
-            hellos.put("Maison4", "0");
+            hellos.put("Serpentard", "0");
 
             Iterator<String> iterator;
 
