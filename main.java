@@ -32,7 +32,7 @@ public class main {
 
             while (!action.equals("QUIT")) {
 
-                System.out.println("\nBienvenue à Poudlard ! \n - Tapez '+' pour ajouter un élément au tableau. \n - Tapez '-' pour supprimer la maison. \n - Tapez 'GET' pour afficher le tableau. \n - Tapez 'SIZE' pour connaître la taille du tableau. \n - Tapez 'QUIT' pour quitter le programme.");
+                System.out.println("\nBienvenue à Poudlard ! \n - Tapez '+' pour ajouter des points à une maison. \n - Tapez '-' pour retirer des points à une maison. \n - Tapez 'DEL' pour supprimer la maison. \n - Tapez 'GET' pour afficher le tableau. \n - Tapez 'SIZE' pour connaître la taille du tableau. \n - Tapez 'QUIT' pour quitter le programme.");
 
                 action = sc.next();
 
@@ -44,28 +44,39 @@ public class main {
 
                     if (action.equals("+")) {
 
-                        System.out.println("Saisir les points :");
+                        System.out.println("Saisir les points à ajouter :");
 
-                        text = sc.nextInt();
+                        text = sc.nextInt()+ hellos.get(id);
 
                         hellos.put(id, text);
 
                     } else if (action.equals("-")) {
 
-                        if (hellos.get(id) != null) {
+                        System.out.println("Saisir les points à retirer :");
 
-                            hellos.remove(id);
-                            System.out.println("Suppression de la maison" + id);
+                        text = hellos.get(id) - sc.nextInt();
 
-                        } else {
+                        hellos.put(id, text);
 
-                            System.out.println("La maison " + id + " n'existe pas.");
+                    }
+                }else if (action.equals("DEL")) {
 
-                        }
+                    System.out.println("Saisir la maison :");
 
-                    } 
+                    id = sc.next();
 
-                } else if (action.equals("GET")) {
+                    if (hellos.get(id) != null) {
+
+                        hellos.remove(id);
+                        System.out.println("Suppression de la maison " + id);
+
+                    } else {
+
+                        System.out.println("La maison " + id + " n'existe pas.");
+
+                    }   
+
+                }else if (action.equals("GET")) {
 
                     iterator = hellos.keySet().iterator();
 
@@ -75,17 +86,14 @@ public class main {
 
                         System.out.println(key + " | " + hellos.get(key));
 
-                    };
-
-                    
-
-                } else if (action.equals("SIZE")) {
+                    }
+                }else if (action.equals("SIZE")) {
 
                     System.out.println("Taille : " + hellos.size());
 
                 }
 
-            }
+            };
 
         }
 
