@@ -38,7 +38,7 @@ public class main {
 
                 if (action.equals("+") || action.equals("-")) {
 
-                    System.out.println("Saisir la maison :");
+                    System.out.println("Saisir la maison surtout serpentard :");
 
                     id = sc.next();
 
