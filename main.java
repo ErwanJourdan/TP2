@@ -12,9 +12,11 @@ public class main {
 
             Scanner sc = new Scanner(System.in);
 
-            HashMap <String, Integer> hellos = new HashMap<String, String>();
+            HashMap <String, Integer> hellos = new HashMap<String, Integer>();
 
-            String action, id, text, key;
+            String action, id, key;
+
+            Integer text;
 
             action = "";
 
