@@ -36,15 +36,15 @@ public class main {
 
                 if (action.equals("+") || action.equals("-")) {
 
-                    System.out.println("Saisir l'identifiant :");
+                    System.out.println("Saisir la maison :");
 
-                    id = sc.nextInt();
+                    id = sc.next();
 
                     if (action.equals("+")) {
 
-                        System.out.println("Saisir le texte :");
+                        System.out.println("Saisir les points :");
 
-                        text = sc.next();
+                        text = sc.nextInt();
 
                         hellos.put(id, text);
 
@@ -53,10 +53,11 @@ public class main {
                         if (hellos.get(id) != null) {
 
                             hellos.remove(id);
+                            System.out.println("Suppression de la maison" + id);
 
                         } else {
 
-                            System.out.println("La clé " + id + " n'existe pas.");
+                            System.out.println("La maison " + id + " n'existe pas.");
 
                         }
 
