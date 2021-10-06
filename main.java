@@ -14,7 +14,7 @@ public class main {
 
             HashMap <String, Integer> hellos = new HashMap<String, Integer>();
 
-            String action, id, key;
+            String action, id, text, key;
 
             Integer text;
 
@@ -32,7 +32,7 @@ public class main {
 
             while (!action.equals("QUIT")) {
 
-                System.out.println("\nBienvenue à Poudlard ! \n - Tapez '+' pour ajouter un élément au tableau. \n - Tapez '-' pour en retirer. \n - Tapez 'GET' pour afficher le tableau. \n - Tapez 'SIZE' pour connaître la taille du tableau. \n - Tapez 'QUIT' pour quitter le programme.");
+                System.out.println("\nBienvenue à Poudlard ! \n - Tapez '+' pour ajouter un élément au tableau. \n - Tapez '-' pour supprimer la maison. \n - Tapez 'GET' pour afficher le tableau. \n - Tapez 'SIZE' pour connaître la taille du tableau. \n - Tapez 'QUIT' pour quitter le programme.");
 
                 action = sc.next();
 
