@@ -47,8 +47,7 @@ public class main {
                         System.out.println("Saisir les points :");
 
                         text = sc.nextInt();
-
-                        hellos.put(id, text);
+                        hellos.put(id,text);
 
                     } else if (action.equals("-")) {
 
@@ -60,7 +59,6 @@ public class main {
                         } else {
 
                             System.out.println("La maison " + id + " n'existe pas.");
-
                         }
 
                     } 
