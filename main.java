@@ -14,7 +14,7 @@ public class main {
 
             HashMap <String, Integer> hellos = new HashMap<String, Integer>();
 
-            String action, id, text, key;
+            String action, id, key;
 
             Integer text;
 
