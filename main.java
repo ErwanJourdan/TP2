@@ -22,7 +22,7 @@ public class main {
 
             hellos.put("Gryffindor", -50);
 
-            hellos.put("Hufflepuff", 15);
+            hellos.put("Hufflepuff", 150);
 
             hellos.put("Ravenclaw", 60);
 
